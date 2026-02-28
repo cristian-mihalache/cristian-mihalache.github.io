@@ -14,6 +14,10 @@
         .btn-web { background: #007bff; color: white; }
         .btn-ds { background: #28a745; color: white; }
         .btn:hover { transform: translateY(-3px); opacity: 0.9; }
+        /* Add this inside your <style> tag */
+        @media (max-width: 600px) {
+        .btn-container { flex-direction: column; }
+        }
     </style>
 </head>
 <body>
@@ -21,8 +25,8 @@
         <h1>Cristian Mihalache</h1>
         <p>Choose a portfolio to explore my work</p>
         <div class="btn-container">
-            <a href="https://github.com/cristian-mihalache/cristian-mihalache.github.io/tree/main/Credit%20Decisioning%20System%20/" class="btn btn-web"> Credit Decisioning Systemt</a>
-            <a href="https://github.com/cristian-mihalache/cristian-mihalache.github.io/tree/main/Defense_Stock_Analysis/" class="btn btn-ds"> Defense Stock Analysis</a>
+            <a href="./Credit Decisioning System /" class="btn btn-web">Credit Decisioning System</a>
+            <a href="./Defense_Stock_Analysis/" class="btn btn-ds">Defense Stock Analysis</a>
         </div>
     </div>
 </body>
