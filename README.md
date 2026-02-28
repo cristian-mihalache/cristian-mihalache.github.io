@@ -31,35 +31,8 @@ Each project is structured to reflect **real-world analytical workflows**, from 
 
 ---
 
-### 2. Budgeting App — Product Analytics  
-📁 `product_analytics_budgeting_app/`  
-- Funnel and cohort analysis  
-- Churn and retention modeling  
-- Feature prioritization insights  
+### 2. Defense Stock Analysis
 
----
-
-### 3. Audit Automation & Anomaly Detection  
-📁 `audit_anomaly_detection/`  
-- Transaction-level risk analysis  
-- Benford’s Law and outlier detection  
-- Audit exception reporting  
-
----
-
-### 4. End-to-End ML Pipeline (Finance Use Case)  
-📁 `ml_pipeline_finance/`  
-- Reproducible data pipelines  
-- Model training and evaluation  
-- API deployment concepts  
-
----
-
-### 5. Advanced SQL for Business Decisions  
-📁 `sql_business_analytics/`  
-- Complex analytical queries  
-- Time-series and window functions  
-- Business interpretation of results  
 
 ---
 
