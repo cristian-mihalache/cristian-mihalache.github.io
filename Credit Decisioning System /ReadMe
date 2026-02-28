@@ -1,0 +1,78 @@
+# Credit Decisioning System
+
+An end‑to‑end machine learning system for automated loan approval, featuring financial ratio engineering, business rules, risk scoring, and an interactive decision dashboard.
+
+---
+
+## 📌 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Model Performance](#model-performance)
+- [Business Rules & Risk Scoring](#business-rules--risk-scoring)
+- [Interactive Demo](#interactive-demo)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Overview
+This project simulates a real‑world credit decision engine. It combines **financial domain knowledge** (debt‑to‑income ratios, household composition) with **supervised machine learning** to predict loan default risk. The system integrates:
+
+- Data preprocessing & feature engineering  
+- Exploratory data analysis with visualisations  
+- Multiple ML models (Logistic Regression, Random Forest, XGBoost, AdaBoost, etc.)  
+- A **business rule engine** for hard reject/approve decisions  
+- A **risk scoring module** that outputs a 0–100 risk score  
+- An **interactive widget** to test custom loan applications  
+
+---
+
+## Features
+- **Automated data cleaning** – handles missing values, standardises formats.  
+- **Financial ratio calculations** – DTI, PTI, income per person, loan‑to‑income, etc.  
+- **Household‑level analysis** – number of earners, dependents, co‑applicant impact.  
+- **Machine learning pipeline** – preprocesses categorical/numerical features, trains and evaluates 6 classifiers.  
+- **Model persistence** – saves the best model and metadata with `joblib`.  
+- **Rule‑based pre‑screening** – fast‑track, automatic rejection for clear violations.  
+- **Risk scoring** – composite score based on credit history, DTI, PTI, income, and ML confidence.  
+- **Interactive Jupyter widgets** – test your own loan application instantly.  
+- **Performance dashboard** – ROC curve, confusion matrix, feature importance, business impact analysis.
+
+---
+
+## Tech Stack
+- **Python** 3.9+  
+- **pandas**, **numpy** – data manipulation  
+- **matplotlib**, **seaborn**, **plotly** – static & interactive visualisations  
+- **scikit‑learn** – ML models, preprocessing, metrics  
+- **xgboost** – gradient boosting  
+- **ipywidgets** – interactive UI  
+- **joblib** – model serialisation  
+
+---
+
+## Dataset
+The dataset `aussieBank.csv` contains **610 loan applications** with 13 original features, including:
+
+- `Applicant_Income`, `Coapplicant_Income`
+- `Amount_Requested`, `Term`
+- `Credit_History` (0/1)
+- `Number_of_Dependents`
+- Categorical: `Gender`, `Marital_Status`, `Education_Level`, `Location`
+- Target: `Approval_Status` (Y/N)
+
+After feature engineering, **25+ derived features** are created (total income, DTI, PTI, household size, risk flags, etc.).
+
+---
+
+## Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/cristian-mihalache/DS_portfolio/tree/main/Credit%20Decisioning%20System%20
+   
