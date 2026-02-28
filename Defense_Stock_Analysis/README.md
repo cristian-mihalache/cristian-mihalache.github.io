@@ -1,6 +1,4 @@
-# cristian-mihalache.github.io
 
-2nd project 
 # Defense Sector Tactical Suite
 **Quantitative Analysis & Machine Learning Portfolio**
 
